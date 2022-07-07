@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+<Button
+    android:id="@+id/start"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/twenty"
+    android:layout_marginLeft="@dimen/twenty_five"
+    android:layout_marginRight="@dimen/twenty_five"
+    android:text="start"
+    />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginLeft="@dimen/twenty_five"
+        android:layout_marginRight="@dimen/twenty_five"
+        android:text="stop"
+        />
+    <Button
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginLeft="@dimen/twenty_five"
+        android:layout_marginRight="@dimen/twenty_five"
+        android:text="play"
+        />
+</LinearLayout>

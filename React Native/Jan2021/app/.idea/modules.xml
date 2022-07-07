@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Jereme_UrbanNetwork_AndroidProject.iml" filepath="$PROJECT_DIR$/../Jereme_UrbanNetwork_AndroidProject.iml" group="Jereme_UrbanNetwork_AndroidProject" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="Jereme_UrbanNetwork_AndroidProject/app" />
+    </modules>
+  </component>
+</project>

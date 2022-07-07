@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+    <RelativeLayout
+        android:id="@+id/ll_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/fifty"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/ten"
+            android:backgroundTint="@color/whiteColor"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/thirty"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/urbannetwork_logo1_png" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_send_message_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border"
+        android:layout_gravity="center_vertical"
+        android:elevation="@dimen/ten"
+
+        android:padding="@dimen/ten"
+        >
+        <!--            <View-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="1dp"-->
+        <!--                android:background="@color/colorPrimary"/>-->
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/Feedback"
+             android:textAlignment="center"
+             android:textStyle="bold"
+             android:textColor="@color/whiteColor"
+             android:textSize="26dp"/>
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="50dp"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/ten"
+
+            android:background="@drawable/circleimg"
+            android:textColor="@color/blackColor"
+            android:hint="@string/title"/>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/title"
+            android:paddingLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@drawable/circleimg"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:hint="@string/description"
+            android:gravity="top"
+            android:textColor="@color/blackColor"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:id="@+id/submit"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/whiteColor"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@drawable/shape"
+
+            android:layout_below="@+id/description"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    tools:context=".RegisterActtivity.BirthdayActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty"
+        android:background="@color/whiteColor"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/whensbirthday"
+            android:textColor="@color/regEmailColor"
+            android:textSize="@dimen/twenty" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fourty"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:background="@color/whiteColor"
+        android:gravity="center"
+
+        android:backgroundTint="@color/transparentColor"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_month"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+             android:layout_weight="0.3"
+            android:background="@drawable/circleimg"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_vertical"
+            android:hint="MM"
+            android:inputType="numberDecimal"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/headColor"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/sixteen"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/et_day"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.3"
+
+            android:background="@drawable/circleimg"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_vertical"
+            android:hint="DD"
+            android:layout_marginLeft="@dimen/twenty"
+            android:inputType="numberDecimal"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/headColor"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/sixteen"
+            tools:ignore="RtlCompat" />
+        <EditText
+            android:id="@+id/et_year"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.4"
+
+            android:background="@drawable/circleimg"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_vertical"
+            android:hint="YYYY"
+            android:layout_marginLeft="@dimen/twenty"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/headColor"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/sixteen"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty_five"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:gravity="center">
+
+
+
+        <Button
+            android:id="@+id/continues"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circleimg"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/poppins_bold"
+            android:shadowColor="@color/whiteLightColor"
+            android:text="@string/continues"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/sixteen" />
+
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/thirty_five"-->
+<!--        android:background="@color/whiteColor"-->
+<!--        android:gravity="center"-->
+<!--        >-->
+
+
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:fontFamily="@font/poppins_bold"-->
+<!--            android:text="@string/continueswith"-->
+<!--            android:textColor="@color/headColor"-->
+<!--            android:textSize="@dimen/eighteen" />-->
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/five"-->
+<!--            android:fontFamily="@font/poppins_bold"-->
+<!--            android:text="@string/facebook"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:textSize="@dimen/eighteen" />-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

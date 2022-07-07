@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingHorizontal="10dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/ll_report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt;!&gt;"
+            android:textColor="@color/redColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/sixteen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Report"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/sixteen"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Please select reason and write note"
+        android:textSize="@dimen/sixteen"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_popup_message"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Reason: "
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/sixteen"/>
+
+        <LinearLayout
+            android:id="@+id/ll_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:background="@drawable/login_button_nobgcolor">
+            <Spinner
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty_five"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/blackColor"
+                android:popupBackground="@color/whiteColor"
+                android:backgroundTint="@color/whiteColor"
+                android:dropDownSelector="@color/colorPrimary"
+                android:dropDownHorizontalOffset="-5dp"
+                android:dropDownWidth="match_parent"
+                android:dropDownVerticalOffset="@dimen/thirty_five"
+                android:entries="@array/report_reasons"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Note:   (Optional)"
+            android:layout_gravity="top|center_horizontal"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/sixteen"/>
+
+        <LinearLayout
+            android:id="@+id/ll_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:background="@drawable/login_button_nobgcolor">
+
+            <EditText
+                android:id="@+id/et_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

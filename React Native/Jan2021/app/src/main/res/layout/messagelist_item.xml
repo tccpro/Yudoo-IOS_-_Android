@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+android:padding="@dimen/five"
+    >
+
+    <LinearLayout
+        android:id="@+id/cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/whiteColor"
+        android:elevation="3dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:src="@drawable/mask_whitecolor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/name"
+                android:textColor="@color/blackDarkColor"
+                android:textSize="@dimen/twenty_five" />
+
+            <TextView
+                android:id="@+id/item_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_name"
+                android:gravity="center_horizontal"
+
+                android:text="@string/message"
+
+                android:textColor="@color/blackDarkColor"
+                android:textSize="@dimen/sixteen" />
+        </LinearLayout>
+    </LinearLayout>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/cont"
+        >
+
+    </TextView>
+</RelativeLayout>

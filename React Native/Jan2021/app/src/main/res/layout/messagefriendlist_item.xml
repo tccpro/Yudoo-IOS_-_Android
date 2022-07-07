@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/three"
+    android:paddingBottom="@dimen/three"
+    android:paddingRight="@dimen/ten"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/five">
+    <ImageView
+        android:id="@+id/iv_income"
+        android:layout_width="@dimen/twenty"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/incoming"/>
+    <ImageView
+        android:id="@+id/iv_outgoing"
+        android:layout_width="@dimen/twenty"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/iv_income"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/outgoing"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/iv_outgoing"
+        android:src="@drawable/default_head_icon"/>
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ten"
+        android:textAlignment="center"
+        android:layout_toRightOf="@id/item_image"
+        android:text="@string/name"
+        android:textSize="@dimen/twenty"
+        android:textColor="@color/blackDarkColor" />
+
+        <TextView
+            android:id="@+id/item_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_toRightOf="@id/item_image"
+            android:text="@string/message"
+            android:textAlignment="center"
+            android:textColor="@color/blackDarkColor"
+            android:textSize="@dimen/fourteen" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/ten"
+        android:background="@drawable/circleimg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/ten"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_border"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/fb_user_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/five"
+                android:elevation="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1"
+                app:riv_border_color="@color/colorPrimary"
+                app:riv_corner_radius="10dip"
+                app:riv_mutate_background="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginTop="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:layout_marginBottom="@dimen/five"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fb_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="Sarah"
+                        android:textColor="@color/headColor"
+                        android:textSize="@dimen/sixteen" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/five"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_more_horiz_black_24dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="3mins ago"
+                    android:textColor="@color/subHeadColor"
+                    android:textSize="@dimen/twelve" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:fontFamily="@font/poppins"
+            android:text=""
+            android:textColor="@color/headColor"
+            android:textSize="@dimen/eighteen" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_file"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/five"
+            android:elevation="7dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:src="@drawable/marvel2"
+            app:riv_border_color="@color/colorPrimary"
+            app:riv_corner_radius="10dip"
+            app:riv_mutate_background="true" />
+
+<!--        <VideoView-->
+<!--            android:id="@+id/video_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_height="200dp"-->
+<!--            />-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/video"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/addpic"
+            app:cardCornerRadius="10dip"
+            android:elevation="7dp"
+            android:orientation="vertical"
+            android:layout_height="200dp">
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:id="@+id/video"-->
+<!--       -->
+<!--            android:layout_height="200dp">-->
+
+            <com.robert.autoplayvideo.VideoImage
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/img_playback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_pause"
+                android:visibility="visible"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/img_vol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_unmute"
+                android:visibility="gone" />
+        </androidx.cardview.widget.CardView>
+<!--        <com.volokh.danylo.video_player_manager.ui.VideoPlayerView-->
+<!--            android:id="@+id/video_view"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"/>-->
+
+        <TextView
+            android:id="@+id/item_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:fontFamily="@font/poppins"
+            android:text=""
+            android:textColor="@color/subHeadColor"
+            android:textSize="@dimen/sixteen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/like"
+                android:layout_margin="@dimen/ten"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/articlelikeBar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:indeterminateTint="@color/rose"
+                    android:layout_gravity="center"
+                    android:progressBackgroundTint="@color/rose"
+                    android:progressTint="@color/rose"
+                    android:progressDrawable="@drawable/prograsslike" />
+                <ImageView
+                    android:id="@+id/likeimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_black_24dp" />
+
+                <TextView
+                    android:id="@+id/likecount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:fontFamily="@font/poppins"
+                    android:text="98"
+                    android:textColor="@color/subHeadColor"
+                    android:textSize="@dimen/sixteen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mode_comment_black_24dp" />
+
+                <TextView
+                    android:id="@+id/commendtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:fontFamily="@font/poppins"
+                    android:text="27"
+                    android:textColor="@color/subHeadColor"
+                    android:textSize="@dimen/sixteen" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+                <TextView
+                    android:id="@+id/titlerecommens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/recomment_groups"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/eighteen" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recommend_group_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/ten"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/ten" />
+
+</LinearLayout>

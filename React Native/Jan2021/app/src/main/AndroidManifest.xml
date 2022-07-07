@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jereme.urban_network_dating">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- <uses-permission android:name="android.Manifest.permission.RECORD_AUDIO"/> -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/jereme_icon1"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/jereme_icon2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateVisible|adjustResize">
+        <activity
+            android:name=".PaypalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+
+        <service android:name=".service.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".NewHomeActivity" />
+        <activity android:name=".RegisterActtivity.YourInterestActivity" />
+        <activity android:name=".RegisterActtivity.LookingActivity" />
+        <activity android:name=".RegisterActtivity.AddmorePictureActivity" />
+        <activity android:name=".RegisterActtivity.ChoosepictureActivity" />
+        <activity android:name=".RegisterActtivity.PasswordActivity" />
+        <activity android:name=".RegisterActtivity.BirthdayActivity" />
+        <activity android:name=".RegisterActtivity.NameActivity" />
+        <activity android:name=".RegisterActtivity.EmailActivity" />
+        <activity android:name=".RegisterActtivity.GenderActivity" />
+        <activity android:name=".MeetNewPeopleActivity" />
+        <activity android:name=".NewPasswordActivity" />
+        <activity android:name=".VerifyCodeActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".AlbumPhotosActivity" />
+        <activity android:name=".RequestActivity" />
+        <activity android:name=".SelectLanguageActivity" />
+        <activity android:name=".GroupDetailsActivity" />
+        <activity android:name=".DatingDetailsActivity" />
+        <activity android:name=".UpdateActivity" />
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".FullscreenActivity" /> <!-- <activity android:name=".Chats.ContactListActivity" /> -->
+        <activity android:name=".Chats.ChatRoom" />
+        <activity
+            android:name=".FriendMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DatingSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManageTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArticlesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManageUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.provider.MediaStore.RECORD_SOUND" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

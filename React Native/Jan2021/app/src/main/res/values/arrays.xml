@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="report_reasons">
+        <item>Spam</item>
+        <item>Hate</item>
+        <item>Speech</item>
+        <item>Illegal</item>
+        <item>Violence</item>
+        <item>Nudity</item>
+        <item>Bullying</item>
+        <item>Other</item>
+    </string-array>
+</resources>

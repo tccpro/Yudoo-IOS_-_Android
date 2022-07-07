@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AlbumPhotosActivity">
+    <RelativeLayout
+        android:id="@+id/ll_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/fifty"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/ten"
+            android:backgroundTint="@color/whiteColor"
+            android:src="@drawable/back"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/thirty"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/urbannetwork_logo1_png" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <ListView
+            android:id="@+id/picture_list"
+            style="@style/listview_whole_project"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/ten"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/picture_list"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_selected_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:layout_above="@id/tv_selected_picture_name"
+                android:src="@drawable/default_head_icon"/>
+            <TextView
+                android:id="@+id/tv_selected_picture_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/five"
+                android:textAlignment="center"
+                android:layout_marginRight="@dimen/five"
+                android:layout_marginLeft="@dimen/five"
+                android:background="@drawable/circleimg"
+                android:layout_above="@id/tv_selected_picture_description"
+                android:textSize="@dimen/sixteen"
+                android:text="picture name"/>
+            <TextView
+                android:id="@+id/tv_selected_picture_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textAlignment="center"
+                android:layout_marginRight="@dimen/five"
+                android:layout_marginLeft="@dimen/five"
+                android:background="@drawable/circleimg"
+                android:textSize="@dimen/sixteen"
+                android:text="picture description"
+                android:layout_marginBottom="@dimen/ten"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

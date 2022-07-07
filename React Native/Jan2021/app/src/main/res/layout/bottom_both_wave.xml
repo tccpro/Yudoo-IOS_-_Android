@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shape_roundradius"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty"
+        android:background="@drawable/shape_roundradius"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginBottom="@dimen/ten"
+                android:gravity="center"
+                android:orientation="horizontal">
+<!--                <TextView-->
+<!--                    android:id="@+id/you"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="You"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:fontFamily="@font/poppins"-->
+<!--                    android:textSize="@dimen/sixteen" />-->
+                <TextView
+                    android:id="@+id/and"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/youand"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginRight="@dimen/five"
+                    android:textColor="@color/headColor"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sarah"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginRight="@dimen/five"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:id="@+id/likeseach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likedeach"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginRight="@dimen/five"
+                    android:textSize="@dimen/sixteen"
+                    android:textColor="@color/headColor"
+                    android:fontFamily="@font/poppins" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/myimage"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:src="@drawable/pic1"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="#FF000000"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/likeimag"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:src="@drawable/tata"
+                    android:layout_marginLeft="-20dp"
+                    android:elevation="1dp"
+                    android:layout_marginRight="-20dp"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="#FF000000"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/otherimage"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:src="@drawable/pic2"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="#FF000000"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ten"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bothlikefor"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginRight="@dimen/five"
+                    android:textSize="@dimen/sixteen"
+                    android:textColor="@color/headColor"
+                    android:fontFamily="@font/poppins" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginRight="@dimen/twenty"
+                android:background="@color/whiteColor"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/looking_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ten"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/interest_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You have 0 interest in common"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginRight="@dimen/five"
+                    android:textSize="@dimen/sixteen"
+                    android:textColor="@color/headColor"
+                    android:fontFamily="@font/poppins" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginRight="@dimen/twenty"
+                android:background="@color/whiteColor"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/interest_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_wave_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fourteen"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/twenty"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginTop="@dimen/twenty"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/send_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/twenty"
+                android:background="@drawable/white_button_blue_border_small"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="@dimen/fourteen"
+                android:shadowColor="@color/whiteLightColor"
+                android:text="@string/send_message"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/sixteen" />
+            <Button
+                android:id="@+id/close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/twenty"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginBottom="@dimen/twenty"
+                android:background="@drawable/border_rose"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="@dimen/fourteen"
+                android:shadowColor="@color/whiteLightColor"
+                android:text="@string/go_back"
+                android:textAllCaps="false"
+                android:textColor="@color/rose"
+                android:textSize="@dimen/sixteen" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

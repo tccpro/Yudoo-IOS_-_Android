@@ -1,0 +1,2 @@
+include ':app' , ':autoplay-video-library'
+rootProject.name='Jereme_UrbanNetwork_AndroidProject'

@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/group_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/marvel"
+           />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="-20dp"
+        android:layout_weight="0.6"
+        android:background="@drawable/shape_roundradius"
+        android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="@dimen/ten"
+           android:background="@drawable/shape_roundradius"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+               <TextView
+                   android:id="@+id/groupname"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/eighteen"
+                   android:text="Marvel Fans"
+                   android:fontFamily="@font/poppins_semibold"
+                   android:textColor="@color/headColor"
+                   ></TextView>
+               <TextView
+                   android:id="@+id/desc"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/fourteen"
+                   android:text="20k members"
+                   android:textColor="@color/subHeadColor"
+                   android:fontFamily="@font/poppins"
+                   ></TextView>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="right"
+                   android:gravity="right"
+                   android:orientation="vertical"
+                   >
+               <Button
+                   android:id="@+id/join_group_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="35dp"
+                   android:textSize="@dimen/twelve"
+                   android:fontFamily="@font/poppins_semibold"
+                   android:text="@string/join"
+                   android:background="@drawable/circleimg"
+                   android:backgroundTint="@color/rose"
+                   android:textColor="@color/whiteColor"
+                   />
+               </LinearLayout>
+           </LinearLayout>
+
+       </LinearLayout>
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:fillViewport="true"
+            android:gravity="top"
+            android:layout_marginLeft="@dimen/ten"
+            android:background="@color/transparentColor"
+            android:layout_marginRight="@dimen/ten"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/eighteen"
+                android:text="@string/about"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginBottom="@dimen/five"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/twelve"
+                android:fontFamily="@font/poppins"
+                android:text="FAN GROUP for the marvel universel all things of the marvel Universel! All things of the marvel universel are welcome."
+                android:textColor="@color/subHeadColor"
+                ></TextView>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/liteblue"
+        >
+
+
+<!--        <ScrollView-->
+<!--            android:id="@+id/scrollView"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/ten"-->
+<!--            android:background="@color/transparentColor"-->
+<!--            android:layout_marginRight="@dimen/ten"-->
+<!--            android:scrollbars="none">-->
+
+
+                <LinearLayout
+                    android:id="@+id/create_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/ten"
+                    android:background="@drawable/circleimg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/ten">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/five"
+                        android:src="@drawable/ic_add_black_24dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="@string/create_new_post"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/sixteen" />
+                </LinearLayout>
+
+
+<!--        <ListView-->
+<!--            android:id="@+id/article_list_details"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="fill_parent"-->
+
+<!--            />-->
+        <ProgressBar
+            android:id="@+id/articleprogressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@+id/button"
+            android:layout_alignStart="@+id/textview"
+            android:layout_alignLeft="@+id/textview"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+        <com.robert.autoplayvideo.CustomRecyclerView
+            android:id="@+id/article_list_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+        <!--                <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_margin="@dimen/ten"-->
+<!--                android:background="@drawable/circleimg"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="@dimen/ten">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/radius_border"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <com.makeramen.roundedimageview.RoundedImageView-->
+<!--                        android:id="@+id/groupimag"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_margin="@dimen/five"-->
+<!--                        android:elevation="7dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/pic1"-->
+<!--                        app:riv_border_color="@color/colorPrimary"-->
+<!--                        app:riv_corner_radius="10dip"-->
+<!--                        app:riv_mutate_background="true" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginLeft="@dimen/ten"-->
+<!--                        android:layout_marginTop="@dimen/five"-->
+<!--                        android:layout_marginRight="@dimen/five"-->
+<!--                        android:layout_marginBottom="@dimen/five"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/name1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:text="Sarah"-->
+<!--                                android:textColor="@color/headColor"-->
+<!--                                android:textSize="@dimen/sixteen" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginRight="@dimen/five"-->
+<!--                                android:gravity="right|center_vertical"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:src="@drawable/ic_more_horiz_black_24dp" />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/interest1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="3mins ago"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/twelve" />-->
+
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="@dimen/ten"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginBottom="@dimen/ten"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/poppins"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="What a happy pappy !"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/headColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="@dimen/eighteen" />&ndash;&gt;-->
+
+<!--                <com.makeramen.roundedimageview.RoundedImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:elevation="7dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:layout_marginTop="@dimen/five"-->
+<!--                    android:src="@drawable/marvel1"-->
+<!--                    app:riv_border_color="@color/colorPrimary"-->
+<!--                    app:riv_corner_radius="10dip"-->
+<!--                    app:riv_mutate_background="true" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="@dimen/ten"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_favorite_black_24dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="@dimen/five"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="98 likes"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/sixteen" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="@dimen/ten"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_mode_comment_black_24dp" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="@dimen/five"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="27 comments"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/sixteen" />-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="@dimen/ten"-->
+<!--                    android:background="@drawable/circleimg"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="@dimen/ten">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/radius_border"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <com.makeramen.roundedimageview.RoundedImageView-->
+
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:layout_margin="@dimen/five"-->
+<!--                            android:elevation="7dp"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:src="@drawable/pic1"-->
+<!--                            app:riv_border_color="@color/colorPrimary"-->
+<!--                            app:riv_corner_radius="10dip"-->
+<!--                            app:riv_mutate_background="true" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginLeft="@dimen/ten"-->
+<!--                            android:layout_marginTop="@dimen/five"-->
+<!--                            android:layout_marginRight="@dimen/five"-->
+<!--                            android:layout_marginBottom="@dimen/five"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center_vertical"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <TextView-->
+
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+
+<!--                                    android:fontFamily="@font/poppins"-->
+<!--                                    android:text="Sarah"-->
+<!--                                    android:textColor="@color/headColor"-->
+<!--                                    android:textSize="@dimen/sixteen" />-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginRight="@dimen/five"-->
+<!--                                    android:gravity="right|center_vertical"-->
+<!--                                    android:orientation="horizontal">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:src="@drawable/ic_more_horiz_black_24dp" />-->
+<!--                                </LinearLayout>-->
+
+<!--                            </LinearLayout>-->
+
+
+<!--                            <TextView-->
+
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:text="3mins ago"-->
+<!--                                android:textColor="@color/subHeadColor"-->
+<!--                                android:textSize="@dimen/twelve" />-->
+
+
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="@dimen/ten"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginBottom="@dimen/ten"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:fontFamily="@font/poppins"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="What a happy pappy !"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="@color/headColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="@dimen/eighteen" />&ndash;&gt;-->
+
+<!--                    <com.makeramen.roundedimageview.RoundedImageView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="200dp"-->
+<!--                        android:elevation="7dp"-->
+<!--                        android:layout_marginTop="@dimen/five"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/marvel2"-->
+<!--                        app:riv_border_color="@color/colorPrimary"-->
+<!--                        app:riv_corner_radius="10dip"-->
+<!--                        app:riv_mutate_background="true" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="@dimen/ten"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:src="@drawable/ic_favorite_black_24dp" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginLeft="@dimen/five"-->
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:text="98 likes"-->
+<!--                                android:textColor="@color/subHeadColor"-->
+<!--                                android:textSize="@dimen/sixteen" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="@dimen/ten"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:src="@drawable/ic_mode_comment_black_24dp" />-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginLeft="@dimen/five"-->
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:text="27 comments"-->
+<!--                                android:textColor="@color/subHeadColor"-->
+<!--                                android:textSize="@dimen/sixteen" />-->
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+            </LinearLayout>
+<!--        </ScrollView>-->
+    </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

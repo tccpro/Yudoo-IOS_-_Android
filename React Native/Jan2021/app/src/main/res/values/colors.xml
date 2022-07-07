@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparentColor">#00000000</color>
+    <color name="colorPrimary">#8859fd</color>
+    <color name="colorPrimaryDark">#3c6Ba3</color>
+    <color name="colorAccent">#8FA9FD</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="whiteLightColor">#33000000</color>
+    <color name="whiteLightColor2">#44ffffff</color>
+    <color name="dividerColor">#f9f6ff</color>
+    <color name="blackColor">#382f32</color>
+    <color name="blackDarkColor">#000000</color>
+    <color name="commonBgColor">#061580</color>
+    <color name="statusColor">#6976F1</color>
+    <color name="textHintColor">#66000000</color>
+    <color name="colorLightPrimary">#344261</color>
+    <color name="greenColor">#00ff00</color>
+    <color name="lightgreen">#414e4e</color>
+    <color name="redColor">#ff0000</color>
+    <color name="headColor">#321B49</color>
+    <color name="subHeadColor">#B2A8C4</color>
+    <color name="rose">#FF5776</color>
+    <color name="borderColor">#E8E8E8</color>
+    <color name="regEmailColor">#707070</color>
+    <color name="literose">#FFF1F3</color>
+    <color name="backroundlist">#FCFAFF</color>
+    <color name="liteblue">#F9F6FF</color>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/recycledivider"
+
+    android:orientation="horizontal"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center|center_vertical"
+        android:src="@drawable/pic1"
+        android:layout_margin="@dimen/ten"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#FF000000"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dot_online"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center|center_vertical"
+        android:visibility="gone"
+        android:src="@drawable/online_dot"
+        android:layout_marginLeft="-20dp"
+       android:layout_marginRight="@dimen/five"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#FF000000"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginBottom="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Message"
+            android:textColor="@color/headColor"
+            android:textSize="@dimen/eighteen"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Message"
+            android:textColor="@color/subHeadColor"
+            android:textSize="@dimen/sixteen"
+            />
+
+    </LinearLayout>
+</LinearLayout>

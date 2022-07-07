@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/radius_border"
+    android:elevation="@dimen/five"
+    android:layout_marginRight="@dimen/twenty"
+    android:layout_marginBottom="@dimen/ten"
+    android:padding="@dimen/ten"
+    android:orientation="horizontal">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/groupimag"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="7dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/five"
+        android:src="@drawable/pic1"
+        app:riv_border_color="@color/colorPrimary"
+        app:riv_corner_radius="10dip"
+        app:riv_mutate_background="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/five"
+        android:layout_marginBottom="@dimen/five"
+        android:layout_marginRight="@dimen/five"
+        android:layout_marginLeft="@dimen/ten"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="header"
+            android:textColor="@color/subHeadColor"
+            android:textSize="@dimen/twelve" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:fontFamily="@font/poppins_bold"
+            android:text="header"
+            android:textColor="@color/headColor"
+            android:textSize="@dimen/sixteen" />
+
+    </LinearLayout>
+</LinearLayout>

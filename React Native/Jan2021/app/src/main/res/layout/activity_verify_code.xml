@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyCodeActivity"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/whiteColor"
+        android:elevation="@dimen/ten">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:padding="@dimen/ten"
+            android:elevation="@dimen/ten"
+            android:src="@drawable/logo_blue_png"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_marginLeft="@dimen/fourty"
+        android:layout_marginRight="@dimen/fourty"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/verify_code_title"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/eighteen"/>
+        <EditText
+            android:id="@+id/verify_code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/login_pw_form_icon"
+            android:drawablePadding="20dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/verify_code"
+            android:inputType="number"
+            android:background="@drawable/circleimg"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+
+            android:textColor="@color/design_default_color_primary"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/fourteen" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/fourty"
+        android:layout_marginLeft="@dimen/fourty"
+        android:layout_marginRight="@dimen/fourty"
+        android:gravity="center">
+        <Button
+            android:id="@+id/verify_code_btn"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="55dp"
+            android:textColor="@color/whiteColor"
+            android:background="@drawable/circleimg"
+            android:backgroundTint="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:textSize="@dimen/twenty"
+            android:shadowColor="@color/whiteLightColor"
+            android:text="@string/verify_code" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

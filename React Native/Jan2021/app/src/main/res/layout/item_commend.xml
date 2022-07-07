@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="60dp"
+    android:clipToPadding="false">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic1"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+
+        app:riv_corner_radius="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_body"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_alignTop="@+id/avatar"
+        android:background="@drawable/their_message"
+        android:backgroundTint="@color/liteblue"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/headColor"
+        android:elevation="2dp"
+        android:textSize="16dp"
+        android:text="How are you doing? This is a long message that should probably wrap."
+        />
+
+</RelativeLayout>

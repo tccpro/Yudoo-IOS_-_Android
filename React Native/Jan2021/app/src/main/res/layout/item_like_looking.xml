@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/title_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ten"
+                android:padding="@dimen/ten"
+                android:layout_weight="0.5"
+                android:background="@drawable/circleimg"
+                android:backgroundTint="@color/literose"
+                android:fontFamily="@font/poppins_bold"
+                android:shadowColor="@color/whiteLightColor"
+                android:text="@string/newfriend"
+                android:textAllCaps="false"
+                android:textColor="@color/rose"
+                android:textSize="@dimen/sixteen"
+                tools:ignore="Suspicious0dp" />
+</LinearLayout>

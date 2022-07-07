@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context=".RegisterActtivity.LookingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty"
+        android:background="@color/whiteColor"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/gender"
+            android:textColor="@color/regEmailColor"
+            android:textSize="@dimen/twenty" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fourty"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginRight="@dimen/twenty"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnmale"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/five"
+            android:layout_weight="0.5"
+            android:background="@drawable/circleimg"
+            android:backgroundTint="@color/rose"
+            android:fontFamily="@font/poppins_bold"
+            android:shadowColor="@color/whiteLightColor"
+            android:text="@string/genderMale"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/sixteen"
+            tools:ignore="Suspicious0dp" />
+
+
+        <Button
+            android:id="@+id/btnfemale"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_margin="@dimen/five"
+            android:background="@drawable/circleimg"
+            android:backgroundTint="@color/literose"
+            android:fontFamily="@font/poppins_bold"
+            android:shadowColor="@color/whiteLightColor"
+            android:text="@string/genderFemale"
+            android:textAllCaps="false"
+            android:textColor="@color/rose"
+            android:textSize="@dimen/sixteen"
+            tools:ignore="Suspicious0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:gravity="center">
+
+
+
+        <Button
+            android:id="@+id/continues"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circleimg"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/poppins_bold"
+            android:shadowColor="@color/whiteLightColor"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/sixteen" />
+
+    </LinearLayout>
+
+</LinearLayout>

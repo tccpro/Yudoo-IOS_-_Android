@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context=".RegisterActtivity.ChoosepictureActivity"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty"
+        android:background="@color/transparentColor"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/picturetime"
+            android:textColor="@color/regEmailColor"
+            android:textSize="@dimen/twenty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/choosepicture"
+            android:textColor="@color/regEmailColor"
+            android:textSize="@dimen/twenty" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fourty"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:background="@color/transparentColor"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:src="@drawable/circle"
+            app:civ_border_width="0dp"
+            app:civ_border_color="#FF000000" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:gravity="center">
+
+
+
+        <Button
+            android:id="@+id/continues"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circleimg"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/poppins_bold"
+            android:shadowColor="@color/whiteLightColor"
+            android:text="@string/continues"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/sixteen" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

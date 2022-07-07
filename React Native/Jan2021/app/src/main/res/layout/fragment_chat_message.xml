@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:paddingTop="@dimen/ten"
+    android:elevation="1dp"
+    android:orientation="horizontal">
+<ImageView
+    android:layout_width="wrap_content"
+    android:id="@+id/back"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/ten"
+    android:src="@drawable/back_blue_24dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="Janet Flower"
+        android:textColor="@color/headColor"
+        android:layout_margin="@dimen/ten"
+        android:textSize="@dimen/eighteen"
+        android:fontFamily="@font/poppins_semibold"
+        android:textAlignment="center"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten"
+        android:src="@drawable/phone"/>
+</LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/messages_view"
+        android:layout_weight="2"
+        android:background="@color/whiteColor"
+        android:scrollbars="none"
+        android:divider="#fff"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circleimg"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/ten"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+
+
+            android:backgroundTint="@color/whiteColor"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_vertical"
+            android:hint="Type your message"
+            android:inputType="text|textMultiLine"
+            android:paddingTop="10dp"
+            android:paddingBottom="@dimen/ten"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textColor="@color/headColor"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/fourteen" />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/ic_send_black_24dp"
+
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

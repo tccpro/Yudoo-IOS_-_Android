@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_five"
+        android:layout_marginRight="@dimen/twenty"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginBottom="@dimen/fifteen"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="2dp"
+            android:drawablePadding="@dimen/ten"
+            android:text="@string/title_notifications"
+            android:textColor="@color/headColor"
+            android:textSize="22dp" />
+        <TextView
+            android:id="@+id/btn_backs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="2dp"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+            android:drawablePadding="@dimen/ten"
+            android:text="@string/go_back"
+            android:textColor="@color/headColor"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/fifteen"
+                android:src="@drawable/ic_notifications_none_black_24dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/five"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_tune_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_notification"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/ten"
+        android:layout_height="match_parent" />
+</LinearLayout>

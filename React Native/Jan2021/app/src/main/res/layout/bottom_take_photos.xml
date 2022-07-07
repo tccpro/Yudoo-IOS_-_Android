@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/circleimg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/add_picture"
+        android:textColor="@color/headColor"
+        android:textSize="20sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/algo_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circleimg"
+
+        android:layout_marginTop="@dimen/twenty"
+        android:backgroundTint="@color/rose"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/poppins_bold"
+        android:shadowColor="@color/whiteLightColor"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/ten"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:shadowColor="@color/whiteLightColor"
+            android:text="@string/take_photo"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/twenty"
+            android:gravity="center|center_horizontal"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/sixteen"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/course_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circleimg"
+
+        android:layout_marginTop="@dimen/twenty"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/poppins_bold"
+        android:shadowColor="@color/whiteLightColor"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/ten"
+            android:src="@drawable/ic_photo_size_select_actual_black_24dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:shadowColor="@color/whiteLightColor"
+            android:text="@string/import_gallery"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/twenty"
+            android:gravity="center|center_horizontal"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/sixteen"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/cancel"
+        android:layout_marginTop="@dimen/twenty"
+
+        android:fontFamily="@font/poppins_bold"
+        android:shadowColor="@color/whiteLightColor"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/sixteen" />
+
+</LinearLayout>
+
+

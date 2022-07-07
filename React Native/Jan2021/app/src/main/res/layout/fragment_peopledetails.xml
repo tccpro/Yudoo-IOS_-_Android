@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/blueboy"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/peopleback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back24dp"
+                android:layout_gravity="center_vertical" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_more_vert_white_24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="-20dp"
+        android:layout_weight="0.7"
+        android:background="@drawable/shape_roundradius"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:scrollbars="none"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:drawableRight="@drawable/online_dot"
+                        android:drawablePadding="@dimen/five"
+                        android:fontFamily="@font/poppins_bold"
+                        android:padding="5dp"
+                        android:text="Sarah,23"
+                        android:textColor="@color/headColor"
+                        android:textSize="22dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/ten"
+                            android:fontFamily="@font/poppins_light"
+                            android:padding="5dp"
+                            android:text="12km away"
+                            android:textSize="@dimen/sixteen"
+                            android:textStyle="bold|italic" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/ten"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/creates"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/ten"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/circleimg"
+                        android:backgroundTint="@color/rose"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_heart" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:shadowColor="@color/whiteLightColor"
+                                android:text="@string/like"
+                                android:textAllCaps="false"
+                                android:textColor="@color/whiteColor"
+                                android:textSize="@dimen/sixteen" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/login_btn1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/circleimg"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/hand" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:shadowColor="@color/whiteLightColor"
+                                android:text="@string/wave"
+                                android:textAllCaps="false"
+                                android:textColor="@color/whiteColor"
+                                android:textSize="@dimen/sixteen" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginBottom="@dimen/twenty"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/headColor"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:textSize="@dimen/eighteen"
+                    android:text="@string/iamlooking" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/looking_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+<!--            <HorizontalScrollView-->
+<!--                android:id="@+id/horizontalScroll"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:scrollbars="none" >-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/ll1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <Button-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_margin="@dimen/ten"-->
+<!--                            android:background="@drawable/radius_border"-->
+<!--                            android:padding="@dimen/ten"-->
+<!--                            android:text="@string/newfriend"-->
+<!--                            android:textColor="@color/rose" />-->
+
+<!--                        <Button-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_margin="@dimen/ten"-->
+<!--                            android:background="@drawable/radius_border"-->
+<!--                            android:padding="@dimen/ten"-->
+<!--                            android:text="@string/activitybuddy"-->
+<!--                            android:textColor="@color/rose" />-->
+
+<!--                        <Button-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_margin="@dimen/ten"-->
+<!--                            android:background="@drawable/radius_border"-->
+<!--                            android:padding="@dimen/ten"-->
+<!--                            android:text="#Romantic-comedy"-->
+<!--                            android:textColor="@color/rose" />-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+<!--            </HorizontalScrollView>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/headColor"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/eighteen"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:text="@string/myinterest" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/interest_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+<!--                <HorizontalScrollView-->
+<!--                    android:id="@+id/horizontalScroll1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:scrollbars="none" >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/ll"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_margin="@dimen/ten"-->
+<!--                                android:background="@drawable/white_button_blue_border_small"-->
+<!--                                android:padding="@dimen/ten"-->
+<!--                                android:text="#Sci-Fi"-->
+<!--                                android:textColor="@color/colorPrimary" />-->
+
+<!--                            <Button-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_margin="@dimen/ten"-->
+<!--                                android:background="@drawable/white_button_blue_border_small"-->
+<!--                                android:backgroundTint="@color/colorPrimary"-->
+<!--                                android:padding="@dimen/ten"-->
+<!--                                android:text="#Action"-->
+<!--                                android:textColor="@color/whiteColor" />-->
+
+<!--                            <Button-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_margin="@dimen/ten"-->
+<!--                                android:background="@drawable/white_button_blue_border_small"-->
+<!--                                android:padding="@dimen/ten"-->
+<!--                                android:text="#Romantic-comedy"-->
+<!--                                android:textColor="@color/colorPrimary" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/lld"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_margin="@dimen/ten"-->
+<!--                                android:background="@drawable/white_button_blue_border_small"-->
+<!--                                android:padding="@dimen/ten"-->
+<!--                                android:text="#Psychological-thirller"-->
+<!--                                android:textColor="@color/colorPrimary" />-->
+
+<!--                            <Button-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_margin="@dimen/ten"-->
+<!--                                android:background="@drawable/white_button_blue_border_small"-->
+<!--                                android:backgroundTint="@color/colorPrimary"-->
+<!--                                android:padding="@dimen/ten"-->
+<!--                                android:text="#Fantasy"-->
+<!--                                android:textColor="@color/whiteColor" />-->
+
+<!--                            <Button-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_margin="@dimen/ten"-->
+<!--                                android:background="@drawable/white_button_blue_border_small"-->
+<!--                                android:padding="@dimen/ten"-->
+<!--                                android:text="#Romantic-comedy"-->
+<!--                                android:textColor="@color/colorPrimary" />-->
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+<!--                </HorizontalScrollView>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/headColor"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:textSize="@dimen/eighteen"
+                    android:text="@string/my_group" />
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/groupprogressBar"
+                    android:progressDrawable="@drawable/circular_progress_bar"
+                    android:layout_below="@+id/button"
+                    android:layout_alignRight="@+id/textView"
+                    android:layout_alignEnd="@+id/textView"
+                    android:layout_alignLeft="@+id/textview"
+                    android:layout_alignStart="@+id/textview"
+                    android:layout_alignParentBottom="true" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/group_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/more_about_me"
+                        android:textColor="@color/headColor"
+                        android:textSize="@dimen/eighteen" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ten"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/more_about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="Colifornia institute of the Arts"
+                        android:textColor="@color/headColor"
+                        android:textSize="@dimen/sixteen" />
+
+                </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/headColor"-->
+<!--                    android:fontFamily="@font/poppins_bold"-->
+<!--                    android:layout_marginLeft="@dimen/ten"-->
+<!--                    android:textSize="@dimen/eighteen"-->
+<!--                    android:text="" />-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="@dimen/ten"-->
+<!--                    android:orientation="vertical" >-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/title"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/study_at"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        android:textSize="@dimen/sixteen" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/interest"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:text="Colifornia institute of the Arts"-->
+<!--                        android:textColor="@color/headColor"-->
+<!--                        android:textSize="@dimen/sixteen" />-->
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="@dimen/ten"-->
+<!--                    android:orientation="vertical" >-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/work"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        android:textSize="@dimen/sixteen" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Grofic Designer at pantagram"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:textColor="@color/headColor"-->
+<!--                        android:textSize="@dimen/sixteen" />-->
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="@dimen/ten"-->
+<!--                    android:orientation="vertical" >-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:text="@string/language"-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        android:textSize="@dimen/sixteen" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:text="English-french-spanish"-->
+<!--                        android:textColor="@color/headColor"-->
+<!--                        android:textSize="@dimen/sixteen" />-->
+<!--                </LinearLayout>-->
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

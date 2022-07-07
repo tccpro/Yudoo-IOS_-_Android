@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    tools:context=".RegisterActtivity.YourInterestActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        android:background="@color/transparentColor"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/pickinterest"
+            android:gravity="left"
+            android:textColor="@color/regEmailColor"
+            android:textSize="@dimen/twenty"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="@color/transparentColor"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/btnNext"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/nexts"
+                android:textColor="@color/rose"
+                android:textSize="@dimen/eighteen" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/transparentColor"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/wewill"
+        android:textColor="@color/regEmailColor"
+        android:textSize="@dimen/sixteen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:layout_marginBottom="@dimen/thirty"
+        android:background="@color/whiteColor"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:paddingTop="@dimen/ten"
+            android:paddingBottom="@dimen/five"
+            android:background="@drawable/circleimg">
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/username_input"
+                android:layout_marginRight="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_toRightOf="@+id/username_icon"
+                android:text=""
+                android:hint="@string/searchfor"
+                android:padding="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/fourteen"
+                android:background="@color/whiteColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- ICON -->
+            <ImageView
+                android:padding="3dp"
+
+                android:id="@+id/username_icon"
+                android:src="@drawable/search"
+                android:layout_margin="@dimen/ten"
+                android:layout_marginRight="0dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </RelativeLayout>
+<!--        <EditText-->
+<!--            android:id="@+id/et_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="@dimen/five"-->
+<!--            android:background="@drawable/circleimg"-->
+<!--            android:drawableLeft="@drawable/search"-->
+<!--            android:drawablePadding="20dp"-->
+<!--            android:fontFamily="@font/poppins_bold"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:hint="@string/searchfor"-->
+<!--            android:inputType="text"-->
+<!--            android:maxLines="1"-->
+<!--            android:padding="10dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:text=""-->
+<!--            android:textColor="@color/headColor"-->
+<!--            android:textCursorDrawable="@drawable/color_cursor"-->
+<!--            android:textSize="@dimen/fourteen" />-->
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/simpleListView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circleimg"
+
+        android:divider="@color/dividerColor"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false" />
+</LinearLayout>

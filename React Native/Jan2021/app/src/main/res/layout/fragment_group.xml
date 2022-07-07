@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageUserActivity"
+    android:orientation="vertical">
+
+        <RelativeLayout
+        android:id="@+id/rl_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteLightColor"
+        android:padding="@dimen/ten"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/et_searchname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/whiteColor"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/ten"
+            android:layout_toLeftOf="@id/search_group_btn"
+            android:hint="@string/search_name"/>
+
+        <Button
+            android:id="@+id/search_group_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fourty"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:paddingLeft="@dimen/ten"
+            android:paddingRight="@dimen/ten"
+            android:textStyle="bold"
+            android:background="@drawable/button_no_round"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whiteColor"
+            android:textAllCaps="false"
+            android:text="@string/search"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_search_group_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rl_post_artitle_view"
+            android:background="@color/whiteColor"
+            android:paddingTop="@dimen/five"
+            android:paddingLeft="@dimen/ten"
+            android:paddingRight="@dimen/ten"
+            android:paddingBottom="@dimen/five"
+            android:layout_below="@id/rl_search_view">
+            <ListView
+                android:id="@+id/group_list"
+                style="@style/listview_whole_project"
+                android:layout_width="200dp"
+                android:layout_marginRight="@dimen/five"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+
+                android:layout_toRightOf="@id/group_list"
+                android:background="@drawable/border"
+                android:elevation="3dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five">
+
+                    <ImageView
+                        android:id="@+id/selected_member_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginRight="@dimen/five"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/default_head_icon" />
+                    <!--                    <ImageView-->
+                    <!--                        android:layout_width="70dp"-->
+                    <!--                        android:layout_height="70dp"-->
+                    <!--                        android:layout_centerHorizontal="true"-->
+                    <!--                        android:src="@drawable/mask_whitecolor"/>-->
+                    <TextView
+                        android:id="@+id/selected_memeber_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/selected_member_photo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/ten"
+                        android:text="@string/name"
+                        android:textStyle="bold"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/sixteen" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/view_articles_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:textStyle="bold"
+                    android:background="@drawable/white_button_blue_border_small"
+                    android:text="@string/details"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary" />
+
+                <CheckBox
+                    android:id="@+id/post_article_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/five"
+                    android:checked="true"
+                    android:text="@string/post_article"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/fifteen" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_post_artitle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#eee"
+            android:paddingLeft="@dimen/ten"
+            android:paddingRight="@dimen/ten"
+            android:paddingBottom="@dimen/ten"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showbutton"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/hide_message_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifteen"
+                    android:visibility="gone"
+                    android:src="@drawable/arrow_down"
+                    android:backgroundTint="@color/transparentColor"
+                    android:background="@color/colorPrimary"/>
+
+                <ImageView
+                    android:id="@+id/show_message_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifteen"
+                    android:layout_below="@id/hide_message_btn"
+                    android:src="@drawable/arrow_up"
+                    android:backgroundTint="@color/transparentColor"
+
+                    android:background="@color/colorPrimary"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/massageopen"
+                android:layout_below="@+id/showbutton"
+                android:layout_marginTop="@dimen/ten"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_new_article_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:layout_toLeftOf="@id/upload_new_article_btn"
+                android:paddingLeft="@dimen/five"
+                android:textStyle="bold"
+                android:background="@drawable/circleimg"
+                android:hint="@string/title"/>
+            <Button
+                android:id="@+id/upload_new_article_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/thirty"
+                android:layout_marginLeft="@dimen/ten"
+                android:background="@drawable/circleimg"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/post"
+                android:textColor="@color/whiteColor"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"/>
+            <EditText
+                android:id="@+id/et_new_article_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_new_article_title"
+                android:layout_marginTop="@dimen/five"
+                android:paddingTop="@dimen/five"
+                android:paddingBottom="@dimen/five"
+                android:paddingLeft="@dimen/five"
+                android:background="@drawable/circleimg"
+                android:textStyle="bold"
+
+                android:textColor="@color/colorPrimary"
+                android:inputType="textMultiLine"
+                android:hint="@string/message"/>
+<!--            <View-->
+<!--                android:id="@+id/article_divider"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_below="@id/et_new_article_message"-->
+<!--                android:layout_marginTop="@dimen/five"-->
+<!--                android:background="@color/colorPrimary"/>-->
+            <ListView
+                android:id="@+id/article_list"
+                style="@style/listview_whole_project"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/five"
+                android:layout_height="200dp"
+                android:background="@drawable/border"
+                android:layout_below="@id/et_new_article_message"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+</RelativeLayout>

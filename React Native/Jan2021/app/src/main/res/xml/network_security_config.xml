@@ -1,0 +1,6 @@
+<network-security-config xmlns:tools="http://schemas.android.com/tools">
+    <domain-config cleartextTrafficPermitted="true" >
+        <domain includeSubdomains="true">10.0.2.2</domain> <!--For emulator-->
+        <domain includeSubdomains="true">https://urban.network</domain><!--For real device, get your ip from pc-->
+    </domain-config>
+</network-security-config>

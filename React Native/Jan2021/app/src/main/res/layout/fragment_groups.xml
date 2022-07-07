@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginTop="@dimen/twenty_five"
+        android:layout_marginRight="@dimen/twenty"
+        android:layout_marginBottom="@dimen/fifteen"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/groups"
+            android:textColor="@color/headColor"
+            android:textSize="22dp">
+
+        </TextView>
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:queryHint="Search Here"
+            android:visibility="gone"
+            android:iconifiedByDefault="false"
+            android:layout_alignParentTop="true"
+            />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteColor"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="@drawable/circleimg"
+                android:backgroundTint="@color/liteblue"
+                android:src="@drawable/ic_blue_add_24dp" />
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/fifteen"
+                android:src="@drawable/ic_notifications_none_black_24dp" />
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/five"
+
+                android:src="@drawable/ic_search_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/title_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/twenty"
+            />
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/groupprogressBar"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:layout_below="@+id/button"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignLeft="@+id/textview"
+            android:layout_alignStart="@+id/textview"
+            android:layout_alignParentBottom="true" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/group_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginBottom="@dimen/twenty" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:fillViewport="true"
+        android:gravity="top"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/timeline"
+                        android:textColor="@color/headColor"
+                        android:textSize="@dimen/eighteen" />
+
+                    <LinearLayout
+                        android:id="@+id/create_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/ten"
+                        android:background="@drawable/circleimg"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/ten">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/five"
+                            android:src="@drawable/ic_add_black_24dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/create_new_post"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/sixteen" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/articleprogressBar"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:layout_below="@+id/button"
+                        android:layout_alignRight="@+id/textView"
+                        android:layout_alignEnd="@+id/textView"
+                        android:layout_alignLeft="@+id/textview"
+                        android:layout_alignStart="@+id/textview"
+                        android:layout_alignParentBottom="true" />
+<!--        <ListView-->
+<!--            android:id="@+id/article_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+
+                    <com.robert.autoplayvideo.CustomRecyclerView
+                        android:id="@+id/article_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/ten"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:text="Timeline"-->
+<!--                android:textColor="@color/headColor"-->
+<!--                android:textSize="@dimen/eighteen" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_margin="@dimen/ten"-->
+<!--                android:background="@drawable/circleimg"-->
+<!--                android:backgroundTint="@color/colorPrimary"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="@dimen/ten">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="@dimen/five"-->
+<!--                    android:src="@drawable/ic_add_black_24dp">-->
+
+<!--                </ImageView>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/poppins"-->
+<!--                    android:text="Create a new post"-->
+<!--                    android:textColor="@color/whiteColor"-->
+<!--                    android:textSize="@dimen/sixteen" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_margin="@dimen/ten"-->
+<!--                android:background="@drawable/circleimg"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="@dimen/ten">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/radius_border"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <com.makeramen.roundedimageview.RoundedImageView-->
+<!--                        android:id="@+id/groupimag"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_margin="@dimen/five"-->
+<!--                        android:elevation="7dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/pic1"-->
+<!--                        app:riv_border_color="@color/colorPrimary"-->
+<!--                        app:riv_corner_radius="10dip"-->
+<!--                        app:riv_mutate_background="true" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginLeft="@dimen/ten"-->
+<!--                        android:layout_marginTop="@dimen/five"-->
+<!--                        android:layout_marginRight="@dimen/five"-->
+<!--                        android:layout_marginBottom="@dimen/five"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/name1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:text="Sarah"-->
+<!--                                android:textColor="@color/headColor"-->
+<!--                                android:textSize="@dimen/sixteen" />-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginLeft="@dimen/five"-->
+
+<!--                                android:layout_marginRight="@dimen/five"-->
+<!--                                android:src="@drawable/ic_play_arrow_black_24dp" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/subname1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:text="Sarah"-->
+<!--                                android:textColor="@color/headColor"-->
+<!--                                android:textSize="@dimen/sixteen" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginRight="@dimen/five"-->
+<!--                                android:gravity="right|center_vertical"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:src="@drawable/ic_more_horiz_black_24dp" />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/interest1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="3mins ago"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/twelve" />-->
+
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/ten"-->
+<!--                    android:layout_marginBottom="@dimen/ten"-->
+<!--                    android:fontFamily="@font/poppins"-->
+<!--                    android:text="What a happy pappy !"-->
+<!--                    android:textColor="@color/headColor"-->
+<!--                    android:textSize="@dimen/eighteen" />-->
+
+<!--                <com.makeramen.roundedimageview.RoundedImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:elevation="7dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/pic1"-->
+<!--                    app:riv_border_color="@color/colorPrimary"-->
+<!--                    app:riv_corner_radius="10dip"-->
+<!--                    app:riv_mutate_background="true" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="@dimen/ten"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_favorite_black_24dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="@dimen/five"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="98 likes"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/sixteen" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/commend"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="@dimen/ten"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_mode_comment_black_24dp" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="@dimen/five"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="27 comments"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/sixteen" />-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_margin="@dimen/ten"-->
+<!--                android:background="@drawable/circleimg"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="@dimen/ten">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/radius_border"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <com.makeramen.roundedimageview.RoundedImageView-->
+<!--                        android:id="@+id/groupimag1"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_margin="@dimen/five"-->
+<!--                        android:elevation="7dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/pic1"-->
+<!--                        app:riv_border_color="@color/colorPrimary"-->
+<!--                        app:riv_corner_radius="10dip"-->
+<!--                        app:riv_mutate_background="true" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginLeft="@dimen/ten"-->
+<!--                        android:layout_marginTop="@dimen/five"-->
+<!--                        android:layout_marginRight="@dimen/five"-->
+<!--                        android:layout_marginBottom="@dimen/five"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/name"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:text="Sarah"-->
+<!--                                android:textColor="@color/headColor"-->
+<!--                                android:textSize="@dimen/sixteen" />-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginLeft="@dimen/five"-->
+
+<!--                                android:layout_marginRight="@dimen/five"-->
+<!--                                android:src="@drawable/ic_play_arrow_black_24dp" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/subname"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:text="Sarah"-->
+<!--                                android:textColor="@color/headColor"-->
+<!--                                android:textSize="@dimen/sixteen" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginRight="@dimen/five"-->
+<!--                                android:gravity="right|center_vertical"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:src="@drawable/ic_more_horiz_black_24dp" />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/interest"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="3mins ago"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/twelve" />-->
+
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/ten"-->
+<!--                    android:layout_marginBottom="@dimen/ten"-->
+<!--                    android:fontFamily="@font/poppins"-->
+<!--                    android:text="Any black mirror fans here?"-->
+<!--                    android:textColor="@color/headColor"-->
+<!--                    android:textSize="@dimen/eighteen" />-->
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="@dimen/ten"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_favorite_black_24dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="@dimen/five"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="98 likes"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/sixteen" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="@dimen/ten"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_mode_comment_black_24dp" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="@dimen/five"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="27 comments"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/sixteen" />-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/ten"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:text="Recommended groups"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/eighteen" />-->
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recommend_group_recyclerView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="@dimen/ten"-->
+
+<!--                android:layout_marginTop="@dimen/ten" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_margin="@dimen/ten"-->
+<!--                android:background="@drawable/circleimg"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="@dimen/ten">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/radius_border"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <com.makeramen.roundedimageview.RoundedImageView-->
+
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_margin="@dimen/five"-->
+<!--                        android:elevation="7dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/pic1"-->
+<!--                        app:riv_border_color="@color/colorPrimary"-->
+<!--                        app:riv_corner_radius="10dip"-->
+<!--                        app:riv_mutate_background="true" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginLeft="@dimen/ten"-->
+<!--                        android:layout_marginTop="@dimen/five"-->
+<!--                        android:layout_marginRight="@dimen/five"-->
+<!--                        android:layout_marginBottom="@dimen/five"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:text="Malik B."-->
+<!--                                android:textColor="@color/headColor"-->
+<!--                                android:textSize="@dimen/sixteen" />-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginLeft="@dimen/five"-->
+
+<!--                                android:layout_marginRight="@dimen/five"-->
+<!--                                android:src="@drawable/ic_play_arrow_black_24dp" />-->
+
+<!--                            <TextView-->
+
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:text="HipHop worl"-->
+<!--                                android:textColor="@color/headColor"-->
+<!--                                android:textSize="@dimen/sixteen" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginRight="@dimen/five"-->
+<!--                                android:gravity="right|center_vertical"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:src="@drawable/ic_more_horiz_black_24dp" />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+
+<!--                        <TextView-->
+
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="3mins ago"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/twelve" />-->
+
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/ten"-->
+<!--                    android:layout_marginBottom="@dimen/ten"-->
+<!--                    android:fontFamily="@font/poppins"-->
+<!--                    android:text="Any Drag fans here? I have one free ticket for anyone that wants to join."-->
+<!--                    android:textColor="@color/headColor"-->
+<!--                    android:textSize="@dimen/eighteen" />-->
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="@dimen/ten"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_favorite_black_24dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="@dimen/five"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="98 likes"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/sixteen" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="@dimen/ten"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_mode_comment_black_24dp" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="@dimen/five"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:text="27 comments"-->
+<!--                            android:textColor="@color/subHeadColor"-->
+<!--                            android:textSize="@dimen/sixteen" />-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context=".RegisterActtivity.ChoosepictureActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        android:background="@color/transparentColor"
+        android:orientation="horizontal"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/addmorepicture"
+            android:gravity="left"
+            android:textColor="@color/regEmailColor"
+            android:textSize="@dimen/twenty" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="@color/transparentColor"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/btnskip"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/skip"
+                android:textColor="@color/rose"
+                android:textSize="@dimen/eighteen" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fourty"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginRight="@dimen/twenty"
+        android:background="@color/transparentColor"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="200dp"
+            android:background="@color/transparentColor"
+            android:orientation="horizontal">
+            <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="7dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/five"
+            android:src="@drawable/pic1"
+            app:riv_border_color="@color/colorPrimary"
+            app:riv_corner_radius="10dip"
+            app:riv_mutate_background="true" />
+<!--        <ImageView-->
+<!--            app:riv_border_width="1dip"-->
+<!--            android:id="@+id/pic2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/pic1" />-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="200dp"
+            android:background="@color/transparentColor"
+            android:orientation="vertical">
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:elevation="7dp"
+                android:layout_weight="0.4"
+                android:layout_margin="@dimen/five"
+                android:src="@drawable/pic2"
+                app:riv_border_color="@color/colorPrimary"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="10dip"
+                app:riv_mutate_background="true"
+                />
+<!--            <ImageView-->
+<!--            android:id="@+id/pic1"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:src="@drawable/pic2" />-->
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pic3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:elevation="7dp"
+                android:scaleType="centerCrop"
+                android:layout_margin="@dimen/five"
+                android:src="@drawable/addpic"
+                app:riv_border_color="@color/colorPrimary"
+                app:riv_corner_radius="10dip"
+                app:riv_mutate_background="true"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginRight="@dimen/twenty"
+        android:background="@color/transparentColor"
+        android:orientation="horizontal">
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pic4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.2"
+            android:layout_margin="5dp"
+            android:elevation="7dp"
+            android:src="@drawable/addpic"
+            app:riv_border_color="@color/colorPrimary"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="10dip"
+            app:riv_mutate_background="true"
+            />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/pic5"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.2"
+            android:elevation="7dp"
+            android:src="@drawable/addpic"
+            app:riv_border_color="@color/colorPrimary"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="10dip"
+            app:riv_mutate_background="true" />
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pic6"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:elevation="7dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/addpic"
+            app:riv_border_color="@color/colorPrimary"
+
+            app:riv_corner_radius="10dip"
+            app:riv_mutate_background="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/continues"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circleimg"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/poppins_bold"
+            android:shadowColor="@color/whiteLightColor"
+            android:text="@string/upload"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/sixteen" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

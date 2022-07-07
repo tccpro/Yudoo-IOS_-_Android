@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_roundradius"
+    android:orientation="vertical"
+    tools:ignore="DuplicateIds">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textAlignment="center"
+                        android:text="@string/filter"
+                        android:textColor="@color/headColor"
+                        android:textSize="@dimen/twenty" />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_clear_black_24dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/headColor"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginLeft="@dimen/ten"
+                android:textSize="@dimen/eighteen"
+                android:text="@string/gender_text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/male"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/border_rose"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/maletext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:shadowColor="@color/whiteLightColor"
+                            android:text="@string/male"
+                            android:textAllCaps="false"
+                            android:textColor="@color/rose"
+                            android:textSize="@dimen/sixteen" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/female"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/border_rose"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/femaletext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:shadowColor="@color/whiteLightColor"
+                            android:text="@string/female"
+                            android:textAllCaps="false"
+                            android:textColor="@color/rose"
+                            android:textSize="@dimen/sixteen" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/both"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/bacground_rose"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/bothtext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:shadowColor="@color/whiteLightColor"
+                            android:text="@string/both"
+                            android:textAllCaps="false"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/sixteen" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/headColor"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginLeft="@dimen/ten"
+                android:textSize="@dimen/eighteen"
+                android:text="@string/age"
+                tools:ignore="MissingPrefix" />
+<!--            <com.crystal.crystalrangeseekbar.widgets.BubbleThumbRangeSeekbar-->
+<!--                android:id="@+id/rangeSeekBar"-->
+<!--                android:layout_width="335dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_marginTop="41dp"-->
+<!--                app:min_value="0"-->
+<!--                app:max_value="100"-->
+<!--                app:bar_color="@color/subHeadColor"-->
+<!--                app:bar_highlight_color="@color/colorPrimary"-->
+<!--                app:data_type="_integer" />-->
+<!--    <com.crystal.crystalrangeseekbar.widgets.BubbleThumbSeekbar-->
+<!--        android:id="@+id/rangeSeekbar3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:corner_radius="10"-->
+<!--        app:min_value="0"-->
+<!--        app:max_value="100"-->
+<!--        app:steps="5"-->
+<!--        app:bar_color="#F7BB88"-->
+<!--        app:bar_highlight_color="#E07416"-->
+<!--        app:left_thumb_image="@drawable/thumb"-->
+<!--        app:left_thumb_image_pressed="@drawable/thumb_pressed"-->
+<!--        app:data_type="_integer"/>-->
+<!--    <com.crystal.crystalrangeseekbar.widgets.BubbleThumbRangeSeekbar-->
+<!--        android:id="@+id/raseekBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:bar_color="@color/subHeadColor"-->
+<!--        android:layout_margin="@dimen/twenty"-->
+<!--        app:bar_highlight_color="@color/colorPrimary"-->
+<!--        app:data_type="_integer"-->
+<!--        app:left_thumb_color="@color/colorPrimary"-->
+<!--        app:max_value="50"-->
+<!--        app:min_value="20"-->
+<!--        app:right_thumb_color="@color/colorPrimary" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/minValue"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_below="@+id/rangeSeekbar8"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:gravity="center" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/maxValue"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignBottom="@id/rangeSeekbar8"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_below="@+id/rangeSeekbar8"-->
+<!--                android:gravity="center" />-->
+<!--            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar-->
+<!--                android:id="@+id/rangeSeekbar8"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:min_value="100"-->
+<!--                app:max_value="200"-->
+<!--                android:layout_margin="@dimen/twenty"-->
+<!--                app:steps="5"-->
+<!--                app:bar_color="@color/subHeadColor"-->
+<!--                app:bar_highlight_color="@color/colorPrimary"-->
+<!--                app:left_thumb_color="@color/colorPrimary"-->
+<!--                app:right_thumb_color="@color/colorPrimary"-->
+<!--                android:layout_toLeftOf="@id/maxValue"-->
+<!--                android:layout_toRightOf="@id/minValue"-->
+<!--                app:data_type="_integer"/>-->
+            <org.florescu.android.rangeseekbar.RangeSeekBar
+                android:id="@+id/pricebar_with_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:absoluteMinValue="100"
+                app:absoluteMaxValue="1"
+                android:layout_margin="@dimen/ten"
+                android:scrollbarSize="@dimen/ten"
+                app:alwaysActive="true"
+                app:thumbNormal="@drawable/dotseek"
+                app:thumbDisabled="@drawable/dotseek"
+                app:thumbPressed="@drawable/dotseek"
+                app:activeColor="@color/colorPrimary"
+                app:internalPadding="4dp"
+                app:valuesAboveThumbs="true"
+                app:textAboveThumbsColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/headColor"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:layout_marginLeft="@dimen/ten"-->
+<!--        android:textSize="@dimen/eighteen"-->
+<!--        android:text="Distance" />-->
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/seekBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/twenty"-->
+<!--        android:layout_marginRight="@dimen/twenty"-->
+<!--        android:layout_marginTop="@dimen/twenty"-->
+<!--        android:indeterminate="false"-->
+<!--        android:max="100"-->
+<!--        android:progress="50"-->
+<!--        android:thumb="@drawable/dotseek"-->
+<!--        android:progressTint="@color/colorPrimary"-->
+<!--        android:textAlignment="textEnd"-->
+<!--        android:scrollbarAlwaysDrawHorizontalTrack="false" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/textViewScore"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                 android:textColor="@color/colorPrimary"-->
+<!--                android:fontFamily="@font/poppins"-->
+<!--                android:layout_marginBottom="@dimen/ten"-->
+<!--                android:layout_below="@+id/seekBar"-->
+<!--                android:layout_marginStart="16dp" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/headColor"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:textSize="@dimen/eighteen"
+                    android:text="@string/lookingfor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/savelooking"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/ten"
+                        android:visibility="gone"
+                        android:text="Add"
+                        android:textSize="@dimen/eighteen"
+                        android:textColor="@color/headColor"
+                        android:fontFamily="@font/poppins_bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/looking_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/headColor"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:textSize="@dimen/eighteen"
+                    android:text="@string/interest" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+                    <TextView
+                        android:id="@+id/saveinterest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/ten"
+                        android:text="Add"
+                        android:visibility="gone"
+                        android:textSize="@dimen/eighteen"
+                        android:textColor="@color/headColor"
+                        android:fontFamily="@font/poppins_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+<!--      <LinearLayout-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:visibility="visible"-->
+<!--          android:id="@+id/addinterestlayout"-->
+<!--          android:orientation="vertical">-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/interest_recycle"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/apply_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/ten"
+                android:layout_margin="@dimen/ten"
+                android:background="@drawable/circleimg"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:shadowColor="@color/whiteLightColor"
+                        android:text="@string/apply_filter"
+                        android:textAllCaps="false"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/sixteen" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

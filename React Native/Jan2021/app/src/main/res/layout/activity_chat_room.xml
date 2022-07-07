@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:paddingTop="@dimen/ten"
+        android:elevation="1dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:src="@drawable/back_blue_24dp"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Janet Flower"
+            android:textColor="@color/headColor"
+            android:layout_margin="@dimen/ten"
+            android:textSize="@dimen/eighteen"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAlignment="center" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:src="@drawable/phone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/progresslayout"
+        android:layout_height="match_parent">
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:id="@+id/pepleprogressBar"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChat"
+        android:layout_width="match_parent"
+        android:background="@color/whiteColor"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circleimg"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/ten"
+        android:id="@+id/root_view"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/emoji_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:src="@drawable/smiley" />
+<!--  <com.devlomi.record_view.RecordView-->
+<!--      android:id="@+id/record_view"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_alignParentBottom="true"-->
+<!--      android:layout_toLeftOf="@id/record_button"-->
+<!--      app:slide_to_cancel_arrow="@drawable/recv_ic_arrow"-->
+<!--      app:slide_to_cancel_arrow_color="#000000"-->
+<!--      app:slide_to_cancel_bounds="8dp"-->
+<!--      app:slide_to_cancel_margin_right="10dp"-->
+<!--      app:slide_to_cancel_text="Slide To Cancel"-->
+<!--      app:counter_time_color="#ff0000"-->
+<!--      />-->
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            app:emojiconSize="28sp"
+            android:backgroundTint="@color/whiteColor"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_vertical"
+            android:hint="@string/type_message"
+            android:inputType="text|textMultiLine"
+            android:paddingTop="10dp"
+            android:paddingBottom="@dimen/ten"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textColor="@color/headColor"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/fourteen" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/ic_send_black_24dp" />
+        <ImageButton
+            android:id="@+id/takecamera"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:padding="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/ic_baseline_photo_camera_24" />
+
+<!--  <com.devlomi.record_view.RecordButton-->
+<!--      android:id="@+id/record_button"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+
+<!--      android:background="@drawable/recv_bg_mic"-->
+<!--      android:scaleType="centerInside"-->
+<!--      app:mic_icon="@drawable/recv_ic_mic_white" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

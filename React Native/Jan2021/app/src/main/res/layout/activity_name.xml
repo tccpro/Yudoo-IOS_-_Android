@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context=".RegisterActtivity.NameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty"
+        android:background="@color/whiteColor"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/whatisname"
+            android:textColor="@color/regEmailColor"
+            android:textSize="@dimen/twenty" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fourty"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/five"
+            android:background="@drawable/circleimg"
+            android:drawableLeft="@drawable/login_user_form_icon"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_vertical"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/headColor"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/fourteen" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:gravity="center">
+
+
+
+        <Button
+            android:id="@+id/continues"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circleimg"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/poppins_bold"
+            android:shadowColor="@color/whiteLightColor"
+            android:text="@string/continues"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/sixteen" />
+
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/thirty_five"-->
+<!--        android:background="@color/whiteColor"-->
+<!--        android:gravity="center"-->
+<!--        >-->
+
+
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:fontFamily="@font/poppins_bold"-->
+<!--            android:text="@string/continueswith"-->
+<!--            android:textColor="@color/headColor"-->
+<!--            android:textSize="@dimen/eighteen" />-->
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/five"-->
+<!--            android:fontFamily="@font/poppins_bold"-->
+<!--            android:text="@string/facebook"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:textSize="@dimen/eighteen" />-->
+
+<!--    </LinearLayout>-->
+</LinearLayout>

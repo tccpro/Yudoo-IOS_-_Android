@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/amount_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/cardInputWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/amountLayout"
+        app:layout_constraintTop_toBottomOf="@+id/amountLayout" />
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Pay with stripe"
+        app:layout_constraintEnd_toEndOf="@+id/cardInputWidget"
+        app:layout_constraintStart_toStartOf="@+id/cardInputWidget"
+        app:layout_constraintTop_toBottomOf="@+id/cardInputWidget" />
+
+
+    <Button
+        android:id="@+id/payButtonPaypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Pay with Paypal"
+        app:layout_constraintEnd_toEndOf="@+id/cardInputWidget"
+        app:layout_constraintStart_toStartOf="@+id/cardInputWidget"
+        app:layout_constraintTop_toBottomOf="@+id/cardInputWidget" />
+
+</LinearLayout>

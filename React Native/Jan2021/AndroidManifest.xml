@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jereme.android.urbannetworkappupdate">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/jereme_icon1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jereme_icon2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SelectLanguageActivity"></activity>
+        <activity android:name=".GroupDetailsActivity"></activity>
+        <activity android:name=".DatingDetailsActivity" />
+        <activity android:name=".UpdateActivity" />
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".FullscreenActivity" />
+        <activity
+            android:name=".FriendMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DatingSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManageTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArticlesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManageUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

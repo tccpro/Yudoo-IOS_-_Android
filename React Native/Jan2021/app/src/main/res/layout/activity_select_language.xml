@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectLanguageActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/ten"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:gravity="center_vertical"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/twenty"
+            android:text="@string/select_language"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/thirty"
+            android:src="@drawable/urbannetwork_logo1_png"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/select_language"
+        style="@style/listview_whole_project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
